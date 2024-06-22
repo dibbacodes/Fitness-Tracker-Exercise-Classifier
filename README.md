@@ -1,42 +1,53 @@
+# Exercise Classifier
 
-### Steps Involved
+## Overview
 
-1. **File Exploration:** Begin exploring and processing the dataset using `make_dataset.py`.
-2. **Understanding CSV Files:** Gain insights into the structure and content of CSV files (measurement, participant, exercise, intensity).
-3. **Data Transformation:** Prepare data for supervised learning tasks and ensure proper formatting for modeling.
+This project aims to analyze and visualize fitness data collected from various sensors. The dataset consists of CSV files containing measurements related to participants, exercises performed, and intensity levels. The goal is to perform comprehensive data processing, feature engineering, and modeling to derive insights and build predictive models.
 
-## Data Visualization
+## Steps Involved
 
-### Workflow
+### 1. Setup and Environment
 
-1. **Visualization Overview:** Implement a workflow to explore data patterns effectively.
-2. **Plotting:** Visualize single columns, all exercises, and compare metrics (sets, reps, intensity).
-3. **Advanced Plotting:** Use multi-axis plots to analyze combinations of sensor data and consolidate plots into one figure.
+- **Download Dataset:** Obtain the dataset and place it in the `data/raw` directory.
+- **Open VS Code Workspace:** Use Visual Studio Code as the development environment.
+- **Create Conda Environment:** Set up a Conda environment using `environment.yml` to manage dependencies and activate it within VS Code.
 
-## Outlier Detection and Handling
+### 2. Data Processing
 
-1. **Identifying Outliers:** Define outliers and use methods like Boxplots with IQR, Chauvenet’s Criterion, and LOF for detection.
-2. **Time-Series Outliers:** Visualize outliers in time-series data for deeper analysis.
-3. **Handling Outliers:** Develop functions to replace or mitigate outlier effects to ensure data quality.
+- **File Exploration:** Navigate to `src/data/make_dataset.py` to begin exploring and processing the dataset.
+- **Understanding CSV Files:** Gain insights into the structure and content of CSV files including measurements, participants, exercises, and intensity levels.
+- **Data Transformation:** Prepare the data for supervised learning tasks, ensuring it's formatted correctly for modeling.
 
-## Feature Engineering
+### 3. Data Visualization
 
-1. **Feature Extraction:** Extract meaningful attributes from raw sensor data.
-2. **Missing Values:** Implement imputation techniques to manage missing data effectively.
-3. **Abstraction Techniques:** Utilize temporal and frequency abstraction to capture essential patterns.
+- **Workflow Overview:** Implement a visualization workflow to explore data patterns.
+- **Plotting:** Visualize single columns, all exercises, and compare metrics such as sets, repetitions (reps), and intensity levels.
+- **Advanced Plotting:** Utilize multi-axis plots to analyze combinations of sensor data and consolidate multiple plots into one figure.
 
-## Modeling and Evaluation
+### 4. Outlier Detection and Handling
 
-1. **Model Training:** Split data into training and test sets for model development.
-2. **Feature Selection:** Use methods like forward feature selection to identify relevant features.
-3. **Hyperparameter Tuning:** Optimize model parameters using grid search for improved performance.
-4. **Evaluation:** Evaluate models using appropriate metrics and compare results across different datasets.
+- **Identifying Outliers:** Define outliers and implement methods such as Boxplots with Interquartile Range (IQR), Chauvenet’s Criterion, and Local Outlier Factor (LOF) to identify them.
+- **Time-Series Outliers:** Visualize outliers in time-series data for deeper analysis.
+- **Handling Outliers:** Develop functions to replace or mitigate outlier effects, ensuring data quality for subsequent analysis.
 
-## Results and Discussion
+### 5. Feature Engineering
+
+- **Feature Extraction:** Implement feature engineering techniques to derive meaningful attributes from raw sensor data.
+- **Dealing with Missing Values:** Apply methods like imputation to manage missing data effectively.
+- **Temporal and Frequency Abstraction:** Abstract features in both temporal and frequency domains to capture essential patterns and insights.
+
+### 6. Modeling and Evaluation
+
+- **Model Training:** Split data into training and test sets for model development.
+- **Feature Selection:** Employ techniques such as forward feature selection using simple decision trees to identify relevant features.
+- **Hyperparameter Tuning:** Use grid search to optimize model parameters and select the best-performing model.
+- **Evaluation:** Evaluate models using metrics appropriate for the task, comparing results across different participants or subsets of data.
+
+### 7. Results and Discussion
 
 - **Visualization of Findings:** Present visualized data patterns and insights derived from the analysis.
 - **Benchmarking:** Establish benchmark results and evaluate model performance against these benchmarks.
-- **Discussion:** Interpret results, discuss limitations, and suggest areas for further exploration or improvement.
+- **Discussion:** Interpret results, discuss limitations, and suggest potential areas for further exploration or improvement.
 
 ---
 
